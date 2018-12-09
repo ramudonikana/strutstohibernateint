@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<package name="abc" extends="struts-default">
+		<action name="register" class="struts2int.User">
+		<result name="success" type="redirect">registrationsuccess.jsp</result>
+		<result name="input">registration.jsp</result>  
+		</action>
+		<action name="doLogin"  class="struts2int.LoginAction">
+			<result name="success" >loginsuccess.jsp</result>
+			<result name="failure">error.jsp</result>
+			<result name="input">login.jsp</result>
+		</action>
+		<action name="forgotpassword" class="struts2int.ForgotAction">
+			<result name="success" type="redirect">emailsuccess.jsp</result>
+			<result name="input">forgotpassword.jsp</result>
+		</action>
+	</package>
+</struts>    

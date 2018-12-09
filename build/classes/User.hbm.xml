@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 17, 2016 2:40:49 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="struts2int.User" table="USER">
+       <!--  <id name="id" type="int">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        --> <id name="id" type="int">
+
+<generator class="increment"/>
+
+</id>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="password" type="java.lang.String">
+            <column name="PASSWORD" />
+        </property>
+        <property name="email" type="java.lang.String">
+            <column name="EMAIL" />
+        </property>
+        <property name="address1" type="java.lang.String">
+            <column name="ADDRESS1" />
+        </property>
+        <property name="address2" type="java.lang.String">
+            <column name="ADDRESS2" />
+        </property>
+        <property name="city" type="java.lang.String">
+            <column name="CITY" />
+        </property>
+        <property name="state" type="java.lang.String">
+            <column name="STATE" />
+        </property>
+        <property name="zipcode" type="java.lang.String">
+            <column name="ZIPCODE" />
+        </property>
+        <property name="mobile" type="java.lang.String">
+            <column name="MOBILE" />
+        </property>
+        <property name="gender" type="char">
+            <column name="GENDER" />
+        </property>
+    </class>
+</hibernate-mapping>
